@@ -13,16 +13,17 @@
 
 ### 项目搭建
 
-    后台部分由于是两个人协同工作，所以需要定义一些基本的规定，比如用require，用同一个[base.js](/static/backend/utils/js/base.js)(统一资源管理)，用同一个api.js(接口的统一管理)，同一个[utils.js](/static/backend/utils/js/utils.js)(自定义的插件库，loading、alert、handle回掉)
 
-    项目打包可开发环境用的是[grunt](https://github.com/yuwanli/grunt-config)(基础的简单配置)
+后台部分由于是两个人协同工作，所以需要定义一些基本的规定，比如用require，用同一个[base.js](/static/backend/utils/js/base.js)(统一资源管理)，用同一个api.js(接口的统一管理)，同一个[utils.js](/static/backend/utils/js/utils.js)(自定义的插件库，loading、alert、handle回掉)
 
-    项目中用了各种各样的插件(由于没有所谓的基础框架，就是jquery，项目纯手搭)，比如datapicker.js(日历插件)、handlebar.js(数据模版插件)、jPage.js(分页插件)、qrcode(生成二维码的插件)、jquery.cxselect(菜单联动)、一堆上传图片的插件(这块坑苦我了，最后都弃用了，图片用了最原始的表单提交)、jquery.validate(表单验证)、zeroclipboard(剪贴板插件)、ueditor(富文本编辑器)等等。你看梳理下来这么多插件，每个插件都得去查他的兼容性，然后还要做比较，这块真的花了很多时间，后悔没选一个基础框架，这样就不用这样一个个的找插件。
+项目打包可开发环境用的是[grunt](https://github.com/yuwanli/grunt-config)(基础的简单配置)
 
-    [自定义组件库](/static/backend/utils/js/utils.js)：这块我主要封装了三个常用的组件
-        loading:加载组件（页面初始化前的loading、及数据请求时的pending）
-        alertInfo:提示组件(统一的提示框，可自定义提示图标、提示标题、提示描述、提示按钮及按钮的回调)
-        handle:处理接口数据组件(搭配alertInfo使用)，这块得跟后台开发人员确定一些基本的数据规则，返回的数据格式，对应的code代表什么意思
+项目中用了各种各样的插件(由于没有所谓的基础框架，就是jquery，项目纯手搭)，比如datapicker.js(日历插件)、handlebar.js(数据模版插件)、jPage.js(分页插件)、qrcode(生成二维码的插件)、jquery.cxselect(菜单联动)、一堆上传图片的插件(这块坑苦我了，最后都弃用了，图片用了最原始的表单提交)、jquery.validate(表单验证)、zeroclipboard(剪贴板插件)、ueditor(富文本编辑器)等等。你看梳理下来这么多插件，每个插件都得去查他的兼容性，然后还要做比较，这块真的花了很多时间，后悔没选一个基础框架，这样就不用这样一个个的找插件。
+
+[自定义组件库](/static/backend/utils/js/utils.js)：这块我主要封装了三个常用的组件
+    loading:加载组件（页面初始化前的loading、及数据请求时的pending）
+    alertInfo:提示组件(统一的提示框，可自定义提示图标、提示标题、提示描述、提示按钮及按钮的回调)
+    handle:处理接口数据组件(搭配alertInfo使用)，这块得跟后台开发人员确定一些基本的数据规则，返回的数据格式，对应的code代表什么意思
 
 
 ### 项目开发
