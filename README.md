@@ -37,13 +37,14 @@
 
 3，require的使用。为了方便统一的资源管理，和按需加载。这里要说的就是，由于是单页面的项目，不能每个页面都去定义资源路径和资源的依赖关系，所以这里做了一个公用的资源管理文件。
 ![base](readme-images/3.png "base")
-    ```javascript
-    require(["../utils/js/base"],function (base) {
-        require(['jquery'], function ($) {
-            //your code
-        })
+
+```javascript
+require(["../utils/js/base"],function (base) {
+    require(['jquery'], function ($) {
+        //your code
     })
-    ```
+})
+```
 
 ### 关于这个项目，我有话说
 
