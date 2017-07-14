@@ -60,7 +60,7 @@ require(["../utils/js/base"],function (base) {
 
 ![wxapp](readme-images/4.jpeg "wxapp")
 
-下一篇将[介绍小程序](https://github.com/yuwanli/octopus-wxapp)的开发
+下一篇将[介绍小程序](https://github.com/yuwanli/octopus-wxapp/blob/master/README.md)的开发
 
 
 
